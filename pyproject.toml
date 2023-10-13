@@ -12,8 +12,22 @@ pandas = "^2.1.1"
 pytest = "^7.4.2"
 isort = "^5.12.0"
 blue = "^0.9.1"
+pydocstyle = "^6.3.0"
+taskipy = "^1.12.0"
+mkdocs = "^1.5.3"
+mkdocstrings-python = "^1.7.3"
+pygments = "^2.16.1"
+mkdocs-material = "^9.4.5"
+pymdown-extensions = "^10.3"
+material = "^0.1"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = "isort . && blue ."
+test = "pytest -v"
+run = "python src/app/main.py"
+kill = "kill -9 $(lsof -t -i :8000)"

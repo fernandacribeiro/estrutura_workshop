@@ -1,0 +1,15 @@
+site_name: Projeto Workshop ETL
+theme:
+  name: material
+  palette:
+    primary: blue
+  language: pt
+
+repo_name: "fernandacribeiro/estrutura_workshop"
+repo_url: "https://github.com/fernandacribeiro/estrutura_workshop"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
