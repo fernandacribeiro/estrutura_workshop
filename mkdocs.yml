@@ -13,3 +13,8 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
