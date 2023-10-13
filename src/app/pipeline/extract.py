@@ -1,7 +1,9 @@
-import os # biblioteca para manipular arquivos e pastas
-import glob # biblioteca para listar arquivos
-import pandas as pd
+import glob  # biblioteca para listar arquivos
+import os  # biblioteca para manipular arquivos e pastas
 from typing import List
+
+import pandas as pd
+
 
 def extract_from_excel(path: str) -> List[pd.DataFrame]:
 
