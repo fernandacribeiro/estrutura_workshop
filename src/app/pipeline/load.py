@@ -1,12 +1,13 @@
+"""Módulo de carga dos dados."""
+
 import os
 
 import pandas as pd
 
 
 def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> str:
-
     """
-    função para receber um dataframe e salvar como excel
+    função para receber um dataframe e salvar como excel.
 
     args: 
         data_frame (pd.DataFrame): dataframe a ser salvo como excel
@@ -15,7 +16,6 @@ def load_excel(data_frame: pd.DataFrame, output_path: str, file_name: str) -> st
 
     return: "Arquivo salvo com sucesso"
     """
-
     if not os.path.exists(output_path):
             os.makedirs(output_path)
 

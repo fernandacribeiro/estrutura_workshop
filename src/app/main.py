@@ -1,3 +1,5 @@
+"""Arquivo que faz as chamadas do pipeline."""
+
 from pipeline.extract import extract_from_excel
 from pipeline.load import load_excel
 from pipeline.transform import concat_data_frames
